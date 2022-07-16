@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,800;1,700;1,800&family=Roboto:wght@500&display=swap');
 
 * {
     margin: 0;
@@ -24,14 +25,15 @@ align-items: center;
 .navbar .logo p {
     width: 100%;
     max-width: 100px;
-    min-width: 65px;
+    min-width: 80px;
     max-height: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5em;
+    font-size: 4.4em;
+    font-weight: 500;
     color: #fafafa;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -58,7 +60,7 @@ height: 100%;
     align-items: center;
     height: 80%;
     color: #fafafa;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     border: 1px solid transparent ;
     transition: 0.3s;  
 }
@@ -99,7 +101,7 @@ position: relative;
     height: 100%;
     background-color: rgb(190, 190, 219);
     opacity: 0.50;
-    mix-blend-mode: luminosity;
+    mix-blend-mode: darken;
 
 }
 
@@ -113,7 +115,7 @@ position: relative;
    font-size: 80px;
    text-transform: uppercase;
    text-align: center;
-   font-weight:300;
+   font-weight:400;
    color: #fafafa;
    line-height: 1;
 }
@@ -121,13 +123,13 @@ position: relative;
 .hero__section-text h1 span {
 
     display: block;
-    font-weight: 700;
+    font-weight: 550;
 
 }
 
 .hero__section-more {
     position: absolute;
-    bottom: 0;
+    bottom: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,10 +137,11 @@ position: relative;
 }
 
 .hero__section-more p {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 400;
     color: #fafafa;
     
 }
@@ -156,7 +159,7 @@ position: relative;
 }
 
 .section-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 35px;
     font-weight: 300;
     text-transform: uppercase;
@@ -180,9 +183,11 @@ position: relative;
 
 .about-section p {
     font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-size: 35px;
     color: black;
     text-align: center;
     line-height: 1.5;
 }
+
+
 
