@@ -195,7 +195,7 @@ position: relative;
 
 .beneficios-section {
     padding: 100px 100px; 
-    background-image: url(./img/depositphotos_99316068-stock-photo-learner-driver-driving-test.jpg) ;
+    background-image: url(./img/pexels-jeshootscom-451590.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -259,4 +259,92 @@ position: relative;
     text-align: center;
     color: black;
 }
+
+/* *********************************************************** */
+
+.contact-section {
+    background-color: #004c8b;
+    padding: 100ox;
+
+}
+
+.contact__formContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 50px;
+}
+
+.contact__formContainer-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact__formContainer-img img {
+    width: 100%;
+    max-width: 470px;
+    object-fit: contain;
+}
+
+.contact__formContainer-form {
+    display: flex;
+}
+
+.contact__formContainer-form .form__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+.contact__formContainer-form .form__item label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: #fafafa;
+    font-weight: 200;
+    text-align: center;
+    margin: 0 0 15 px 0;
+}
+
+.contact__formContainer-form .form__item input {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    outline: none;
+    width: 100%;
+}
+
+.contact__formContainer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.contact__formContainer-form form button {
+    width: 40%;
+    align-items: center;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 30%;
+    font-size: 20px;
+    text-transform: uppercase;
+    background-color: skyblue;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ;
+}
+
+.contact__formContainer-form form button:hover {
+ background-color: tomato;
+ color: #fafafa;
+ font-weight: 600;     
+
+}
+
 
