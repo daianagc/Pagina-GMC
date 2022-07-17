@@ -137,6 +137,7 @@ position: relative;
 }
 
 .hero__section-more p {
+    cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
@@ -152,6 +153,9 @@ position: relative;
     background-color: #fafafa;
 
 }
+
+
+
 
 .container {
     max-width: 1200px;
