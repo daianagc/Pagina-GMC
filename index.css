@@ -32,7 +32,7 @@ align-items: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 4.4em;
+    font-size: 3.9em;
     font-weight: 500;
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
@@ -228,6 +228,7 @@ position: relative;
 }
 
 .beneficios__car-grid {
+    cursor: pointer;
     width: 100%;
     background-color: #fafafa;
     border-radius: 30px;
@@ -264,7 +265,7 @@ position: relative;
 
 .contact-section {
     background-color: #004c8b;
-    padding: 100ox;
+    padding: 100px;
 
 }
 
@@ -304,7 +305,7 @@ position: relative;
     color: #fafafa;
     font-weight: 200;
     text-align: center;
-    margin: 0 0 15 px 0;
+    margin: 0 0 15px 0;
 }
 
 .contact__formContainer-form .form__item input {
@@ -326,11 +327,11 @@ position: relative;
 
 .contact__formContainer-form form button {
     width: 40%;
-    align-items: center;
+    align-self: center;
     padding: 10px;
     border: none;
     outline: none;
-    border-radius: 30%;
+    border-radius: 30px;
     font-size: 20px;
     text-transform: uppercase;
     background-color: skyblue;
