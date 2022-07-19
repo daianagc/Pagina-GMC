@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,800;1,700;1,800&family=Roboto:wght@500&display=swap');
 
+:root {
+    --padding-x: 100px;
+    --font-family: 'Montserrat', sans-serif;
+}
 
 
 * {
@@ -35,7 +39,7 @@ align-items: center;
     font-size: 3.9em;
     font-weight: 500;
     color: #fafafa;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
 
 }
 
@@ -62,7 +66,7 @@ height: 100%;
     align-items: center;
     height: 80%;
     color: #fafafa;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     border: 1px solid transparent ;
     transition: 0.3s;  
 }
@@ -91,6 +95,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 position: relative;
+background-attachment: fixed;
 
 }
 
@@ -113,7 +118,7 @@ position: relative;
 }
 
 .hero__section-text h1 {
-   font-family: 'Montserrat', sans-serif;
+   font-family: var(--font-family);
    font-size: 80px;
    text-transform: uppercase;
    text-align: center;
@@ -140,7 +145,7 @@ position: relative;
 
 .hero__section-more p {
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     text-transform: uppercase;
     text-align: center;
     font-size: 30px;
@@ -151,7 +156,7 @@ position: relative;
 
 
 .about-section {
-    padding: 100px 100px;
+    padding: 100px var(--padding-x);
     background-color: #fafafa;
 
 }
@@ -163,7 +168,7 @@ position: relative;
 }
 
 .section-title {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-size: 60px;
     font-weight: 250;
     text-transform: uppercase;
@@ -186,7 +191,7 @@ position: relative;
 }
 
 .about-section p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-size: 35px;
     color: black;
     text-align: center;
@@ -194,12 +199,13 @@ position: relative;
 }
 
 .beneficios-section {
-    padding: 100px 100px; 
+    padding: 100px var(--padding-x);
     background-image: url(./img/pexels-jeshootscom-451590.jpg) ;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    background-attachment: fixed;
 }
 
 .beneficios-section::before {
@@ -254,7 +260,7 @@ position: relative;
 }
 
 .beneficios__card-text h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-weight: 700;
     font-size: 30px;
     text-align: center;
@@ -265,7 +271,7 @@ position: relative;
 
 .contact-section {
     background-color: #004c8b;
-    padding: 150px;
+    padding: 100px var(--padding-x);
 
 }
 
@@ -282,7 +288,7 @@ position: relative;
 }
 
 .contact__formContainer-img img {
-    width: 150%;
+    width: 100%;
     max-width: 470px;
     object-fit: contain;
 }
@@ -296,11 +302,11 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
+    width: 75%;           
 }
 
 .contact__formContainer-form .form__item label {
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     font-size: 20px;
     color: #fafafa;
     font-weight: 200;
@@ -323,6 +329,7 @@ position: relative;
     justify-content: center;
     align-items: center;
     width: 100%;
+    
 }
 
 .contact__formContainer-form form button {
@@ -335,7 +342,7 @@ position: relative;
     font-size: 20px;
     text-transform: uppercase;
     background-color: skyblue;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
     margin-top: 50px;
     cursor: pointer;
     transition: background-color 0.3s ;
@@ -358,7 +365,7 @@ footer p{
     color: black;
     font-size: 20px;
     font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font-family);
 }
 
 footer .container-footer{
@@ -366,4 +373,60 @@ footer .container-footer{
  display: flex;
  justify-content: center;
  align-items: center;
+}
+
+.menu__mobile {
+    display: none;
+}
+
+/* *********************************************************** */
+
+@media screen and (max-width: 1235px) {
+    :root {
+        --padding-x: 50px;
+    }
+   
+    .beneficios__cardContainer {
+        gap: 3%;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
+}
+
+@media screen and (max-width: 768px) {
+ .menu {
+    display: none;
+ }
+
+ .menu__mobile {
+    display: block;
+ }
+
+ .hero__section-text h1 {
+    font-size: 4em;
+ }
+
+ .contact__formContainer {
+    grid-template-columns: 1fr;
+ }
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 1100px) {
+
+}
+
+@media screen and (max-width: 1100px) {
+
 }
